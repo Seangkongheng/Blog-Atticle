@@ -1,0 +1,70 @@
+.content-container{
+    padding: 0 100px;
+}
+
+.content-card{
+    overflow: hidden;
+    width: 280px;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+}
+.content-card-date{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(237, 255, 103);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 auto;
+    left: 5%;
+}
+.content-card-date span{
+    font-size: 20px;
+}
+.content-card-date small{
+    font-size: 7px;
+}
+.content-card-image{
+    background-color: blue;
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content-card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content-card-title p{
+    margin-top: 20px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Show only 2 lines */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    overflow: hidden; /* Hide the overflow text */
+    text-overflow: ellipsis;
+}
+.content-card-title{
+    height: auto;
+    padding-left: 30px;
+    border-left: 3px solid rgb(152, 255, 56);
+
+}
+.content-card-title a{
+    text-decoration: none;
+}
+.list-card-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}

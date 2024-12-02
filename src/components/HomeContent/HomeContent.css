@@ -1,0 +1,38 @@
+.home-content-container h1 {
+    font-size: 70px;
+    animation: slideTextLeft 4s ease-in-out infinite;
+}
+
+.home-content-container p {
+    animation: slideTextRight 4s ease-in-out infinite;
+}
+
+@keyframes slideTextLeft {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0); /* Move to the center */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0); /* Keep the text at the center */
+        opacity: 1; /* Ensure the text stays visible */
+    }
+}
+
+@keyframes slideTextRight {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0); /* Move to the center */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0); /* Keep the text at the center */
+        opacity: 1; /* Ensure the text stays visible */
+    }
+}
